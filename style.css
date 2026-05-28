@@ -77,3 +77,38 @@ img:hover {
     background-color: #ffaa00;  /* ваш цвет */
     transform: translateY(-3px);
 }
+/* Адаптация для телефонов (экран уже 768 пикселей) */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Чуть крупнее текст для удобства */
+    }
+    
+    header {
+        padding: 15px;
+    }
+    
+    header img {
+        width: 120px; /* Логотип поменьше на телефоне */
+    }
+    
+    nav a {
+        display: block; /* Каждая ссылка с новой строки */
+        margin: 5px 0;
+        padding: 8px;
+        background: #444;
+    }
+    
+    main {
+        margin: 10px;
+        padding: 15px;
+    }
+    
+    img {
+        max-width: 100%; /* Все картинки не вылезают за экран */
+        height: auto;
+    }
+    
+    footer {
+        font-size: 12px;
+    }
+}
