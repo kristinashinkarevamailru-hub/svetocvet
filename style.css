@@ -1,0 +1,79 @@
+body {
+    font-family:Verdana, sans-serif;
+    background: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #ffb6c1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background: #ffe4c4;
+    text-align: center;
+    padding: 10px;
+}
+nav a {
+    color: db7093;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+main {
+    background: #ffb6c1;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #ffe4c4;
+}
+
+footer {
+    background: #ffe4c4;
+    color: db7093;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Изначально все основные блоки прозрачны и сдвинуты */
+header, section, footer {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Задержки для появления по очереди */
+header { animation-delay: 0.1s; }
+section:nth-of-type(1) { animation-delay: 0.3s; }
+section:nth-of-type(2) { animation-delay: 0.5s; }
+footer { animation-delay: 0.7s; }
+
+/* Сама анимация */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.button, a {
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.button:hover, a:hover {
+    background-color: #ffaa00;  /* ваш цвет */
+    transform: translateY(-3px);
+}
