@@ -1,40 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title>Светоцвет</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Светоцвет – Услуги и мероприятия</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <img src="logo.png" alt="Логотип" width="500">
+    <img src="logo.png" alt="Логотип Светоцвет" width="500">
 </header>
 
 <nav>
     <a href="index.html">Главная</a>
     <a href="about.html">О нас</a>
     <a href="services.html">Услуги</a>
+    <a href="contacts.html">Контакты</a>
 </nav>
-<div style="background-color: #ffb6c1;  max-width:1000px; margin: 20px auto; padding: 20px;">
 
-    <h2>Наши услуги</h2>
-    <ul>
-        <li>Букеты – по поводу и без</li>
-        <li>Композиции – удобно</li>
-        <li>Свадьбы и события – под ключ</li>
-    </ul>
+<main>
+    <section>
+        <h2>Что мы предлагаем</h2>
+        <p>Мы создаём флористические решения любой сложности. Ниже — подробное описание услуг. Нажмите на заголовок, чтобы развернуть.</p>
+    </section>
 
-    <h2>Примеры событий с нами</h2>
-    <img src="test7.jpg" width="300">
-    <img src="test8.jpg" width="300">
-    <img src="test9.jpg" width="300">
+    <section>
+        <h2>💐 Наши услуги</h2>
+        <div class="service-accordion">
+            <div class="service-accordion-item">
+                <div class="accordion-header">🌸 Букеты на любой случай</div>
+                <div class="accordion-content">
+                    <p>Составляем из сезонных цветов: ромашки, пионы, гортензии, розы. Возможна упаковка в крафт, плёнку или шляпную коробку.</p>
+                    <p><strong>Цена:</strong> от 2 500 ₽</p>
+                </div>
+            </div>
+            <div class="service-accordion-item">
+                <div class="accordion-header">🏺 Интерьерные композиции</div>
+                <div class="accordion-content">
+                    <p>Готовые вазы с живыми цветами для дома или офиса. Меняем цветы раз в неделю по подписке.</p>
+                    <p><strong>Цена:</strong> от 3 200 ₽ (разово) / 12 000 ₽ в месяц (абонемент на 5 букетов)</p>
+                </div>
+            </div>
+            <div class="service-accordion-item">
+                <div class="accordion-header">💍 Свадебное оформление под ключ</div>
+                <div class="accordion-content">
+                    <p>Букет невесты, бутоньерки, оформление арки, композиции на столы, доставка и монтаж в день свадьбы.</p>
+                    <p><strong>Цена:</strong> от 25 000 ₽ (зависит от сложности и количества гостей)</p>
+                </div>
+            </div>
+            <div class="service-accordion-item">
+                <div class="accordion-header">🎨 Мастер-класс по флористике</div>
+                <div class="accordion-content">
+                    <p>Обучаем составлению букетов в группе до 6 человек. Все материалы включены.</p>
+                    <p><strong>Цена:</strong> 3 500 ₽ с человека</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- НОВЫЙ БЛОК: ФОТОГРАФИИ МЕРОПРИЯТИЙ -->
+    <section class="event-gallery-section">
+        <h2>📸 Наши мероприятия</h2>
+        <p>Реальные проекты, которые мы оформили: свадьбы, корпоративы, уютные вечеринки.</p>
+        <div class="event-gallery">
+            <div class="event-photo">
+                <img src="event1.jpg" alt="Свадебное оформление арки">
+                <div class="event-caption">Свадебная арка, 2025</div>
+            </div>
+            <div class="event-photo">
+                <img src="event2.jpg" alt="Корпоратив в ресторане">
+                <div class="event-caption">Корпоратив, цветочный стол</div>
+            </div>
+            <div class="event-photo">
+                <img src="event6.jpg" alt="Декор стола">
+                <div class="event-caption">Сервировка и цветы на банкете</div>
+            </div>
+        </div>
+        <p class="event-note">*Больше примеров в нашем портфолио – спросите у менеджера.</p>
+    </section>
+
+    <section>
+        <h2>Дополнительные услуги</h2>
+        <ul class="services-list">
+            <li>🚚 Доставка по городу – 500 ₽</li>
+            <li>🎨 Выезд флориста на мероприятие – от 8 000 ₽</li>
+            <li>💐 Подписка «Цветок недели» – 3 900 ₽/мес</li>
+        </ul>
+    </section>
+
+    <section class="cta">
+        <h2>Хотите такое же оформление?</h2>
+        <p>Рассчитаем стоимость вашего события</p>
+        <button class="btn">Заказать звонок</button>
+    </section>
 </main>
 
 <footer>
     <p>© 2026 Светоцвет. Телефон: +7 123 456-78-90</p>
 </footer>
 
+<!-- Лайтбокс (будет добавлен через script.js) -->
+<script src="script.js"></script>
 </body>
 </html>
-</div>

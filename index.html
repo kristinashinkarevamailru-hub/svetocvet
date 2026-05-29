@@ -1,49 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Светоцвет</title>
+    <title>Светоцвет – Студия цветов</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-</nav>
+
 <header>
-    <img src="logo.png" alt="Логотип" width="500">
+    <img src="logo.png" alt="Логотип Светоцвет" width="500">
 </header>
 
 <nav>
     <a href="index.html">Главная</a>
     <a href="about.html">О нас</a>
     <a href="services.html">Услуги</a>
+    <a href="contacts.html">Контакты</a>
 </nav>
 
 <main>
-    <h2>Концепция бренда</h2>
-    <p>«Светоцвет» — студия, где каждый букет наполнен светом. 
-Мы работаем с сезонными цветами, делая акцент на естественной красоте 
-и ощущении «живого момента».
-</p>
+    <section>
+        <h2>Концепция бренда</h2>
+        <p>«Светоцвет» — студия, где каждый букет наполнен светом. Мы работаем с сезонными цветами, делая акцент на естественной красоте и ощущении «живого момента».</p>
+    </section>
 
-    <h2>Наши услуги</h2>
-    <ul>
-        <li>Букеты – по поводу и без</li>
-        <li>Композиции – удобно</li>
-        <li>Свадьбы и события – под ключ</li>
-    </ul>
+    <!-- НОВЫЙ БЛОК: АЙДЕНТИКА ЛОГОТИПА -->
+    <section class="logo-identity">
+        <h2>🌿 Логотип «Светоцвет»: символ света и цветов</h2>
+        <div class="logo-showcase">
+            <img src="logo.png" alt="Логотип Светоцвет крупно" class="logo-big">
+            <div class="logo-description">
+                <p>Наш логотип — это <strong>плавная линия</strong>, напоминающая одновременно <strong>лепесток цветка</strong> и <strong>луч света</strong>. Он объединяет две главные сущности бренда: природу и свет.</p>
+                <p>Почему мы выбрали именно его?</p>
+                <ul>
+                    <li>✨ <strong>Лепесток</strong> — символ нежности, жизни, флористики.</li>
+                    <li>☀️ <strong>Луч</strong> — олицетворяет радость, тепло и название «Светоцвет».</li>
+                    <li>🎨 <strong>Плавные изгибы</strong> — отражают естественность и лёгкость наших композиций.</li>
+                    <li>💐 <strong>Минимализм</strong> — логотип легко запоминается, работает на любых носителях (от визитки до билборда).</li>
+                </ul>
+                <p>Цветовая гамма логотипа — <span style="color: #e56f5d;">коралловый</span> и <span style="color: #d99cf8;">сиреневый</span> — взята из фирменной палитры, создавая ощущение уюта и современности.</p>
+            </div>
+        </div>
+        <div class="logo-quote">
+            «Каждый наш букет начинается с этого знака — обещания красоты и света».
+        </div>
+    </section>
 
-    <h2>Фотографии</h2>
-    <img src="test.webp" width="300">
-    <img src="test2.jpg" width="300">
-    <img src="test4.jpg" width="300">
-    <img src="test5.jpg" width="300">
-    <img src="test3.jpg" width="300">
-    <img src="test6.jpg" width="300">
+    <section>
+        <h2>Наши работы</h2>
+        <div class="gallery">
+            <img src="test.webp" alt="Букет 1">
+            <img src="test2.jpg" alt="Букет 2">
+            <img src="test3.jpg" alt="Букет 3">
+            <img src="test4.jpg" alt="Букет 4">
+            <img src="test5.jpg" alt="Букет 5">
+            <img src="test6.jpg" alt="Букет 6">
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Хотите такой же букет?</h2>
+        <p>Закажите индивидуальную композицию</p>
+        <button class="btn">Заказать звонок</button>
+    </section>
 </main>
 
 <footer>
     <p>© 2026 Светоцвет. Телефон: +7 123 456-78-90</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
